@@ -1,16 +1,37 @@
-export const getFruit = (name) => {
-	// använd fruits-arrayen och returnera det fruit-objekt som matchar name
-	// finns det ingen sådan fruit så returnera undefined
+import { fruits} from "./fruits";
+
+
+// använd fruits-arrayen och returnera det fruit-objekt som matchar name
+// finns det ingen sådan fruit så returnera undefined
+export const getFruit = (name: string) => {
+	let fruktnamn = fruits.find(obj => obj.name === name);
+	if(fruktnamn){
+	console.log(fruktnamn.name)
+	}else{
+		console.log(fruktnamn)
+	}
 };
 
-export const getIcon = (name) => {
-	// använd fruits-arrayen och returnera ikonen som matchar frukten name
-	// finns det ingen sådan frukt så returnera undefined
+// använd fruits-arrayen och returnera ikonen som matchar frukten name
+// finns det ingen sådan frukt så returnera undefined
+export const getIcon = (name: string) => {
+	let fruktnamn = fruits.find(obj => obj.name === name);
+	if(fruktnamn){
+	console.log(fruktnamn.icon)
+	}else{
+		console.log(fruktnamn)
+	}
 };
 
-export const getColor = (name) => {
-	// använd fruits-arrayen och returnera färgen som matchar frukten name
-	// finns det ingen sådan frukt så returnera undefined
+// använd fruits-arrayen och returnera färgen som matchar frukten name
+// finns det ingen sådan frukt så returnera undefined
+export const getColor = (name:string) => {
+	let fruktnamn = fruits.find(obj => obj.name === name);
+	if(fruktnamn){
+	console.log(fruktnamn.color)
+	}else{
+		console.log(fruktnamn)
+	}
 };
 
 // gör en till funktion som man ger ett fruktnamn och som returnerar en frukts kategori
