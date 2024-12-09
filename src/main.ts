@@ -3,6 +3,7 @@ import  {getFruit, getIcon, getColor,
 numberOfColoredFruits, getFruitsByCategory,
 getIconsByCategory }  from  './fruits/utils.ts'
 
+// skriv ett program här nedan som testar alla de funktioner som finns i fruits/utils
 
 getFruit("grape");
 
@@ -16,4 +17,4 @@ getFruitsByCategory("drupe");
 
 getIconsByCategory("drupe");
 
-// skriv ett program här nedan som testar alla de funktioner som finns i fruits/utils
+
